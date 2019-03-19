@@ -20,6 +20,26 @@ UUID= ( My disk number adress) /               ext4    errors=remount-ro 0      
 /swap    sw              0       0
 
 
+Или 
+
+/boot/efi.kernel
+
+/swap    sw              0       0
+
+/boot/efi.kernel
+
+/swap1    sw              0       0
+
+/boot/efi.kernel
+
+/swap2    sw              0       0
+
+..............
+
+efi.kernel как пример и после /swap    sw              0       0 иногда может идти строка вида моё устройство
+
+f5ffff-фирма производитель
+
 
 Можно дублировать это до бесконечности указывая тот же uuid  и скорость будет всё выше и выше
 
