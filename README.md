@@ -42,6 +42,17 @@ f5ffff-фирма производитель
 
 Пока пример без всякого устройства флешки вот https://github.com/Griggorii/fstab-my-patent-1-device-1--proprietary-speed-system-linux/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202019-03-20%2018-50-18.png
 
+Свапы создаются в терминале от рута примерно так ну и где за место 812 можно поставить сколько хотите и за место имени swapfile можно использовать любое другое имя или вообще устройство 
+
+&&fallocate -l 812M /swapfile
+
+&&chmod 600 /swapfile
+
+&&mkswap /swapfile
+
+&&swapon /swapfile
+
+
 После этого надо будет сделать update-initramfs -u -v && update-initramfs -u && update-grub
 
 Можно дублировать это до бесконечности указывая тот же uuid  и скорость будет всё выше и выше вот такой вот с виду бутерброд это
