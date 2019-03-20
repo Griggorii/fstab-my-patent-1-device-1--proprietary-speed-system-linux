@@ -52,6 +52,8 @@ f5ffff-фирма производитель
 
 &&swapon /swapfile
 
+Потом редактируется /etc/fstab исходя из имён созданных свапов
+
 
 После этого надо будет сделать update-initramfs -u -v && update-initramfs -u && update-grub
 
